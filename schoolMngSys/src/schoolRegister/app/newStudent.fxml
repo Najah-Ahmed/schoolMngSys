@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="498.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolRegister.controllers.StudentRegController">
+   <children>
+      <Pane prefHeight="498.0" prefWidth="200.0" style="-fx-background-color: #303960;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="134.0" fitWidth="174.0" layoutX="33.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/14760371461555931396-128.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="191.0" prefHeight="46.0" prefWidth="163.0" text="I Believe In You" textFill="WHITE">
+               <font>
+                  <Font name="Arial Italic" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="54.0" layoutY="169.0" text="KCode" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="240.0" layoutY="36.0" text="Registration New Student">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFullName" layoutX="240.0" layoutY="94.0" prefHeight="27.0" prefWidth="273.0" promptText="Full Name" />
+      <TextField fx:id="txtID" layoutX="240.0" layoutY="142.0" prefHeight="27.0" prefWidth="273.0" promptText="ID" />
+      <ComboBox fx:id="cbLevel" layoutX="240.0" layoutY="190.0" prefHeight="27.0" prefWidth="273.0" promptText="Level" />
+      <ComboBox fx:id="cbClass" layoutX="240.0" layoutY="249.0" prefHeight="27.0" prefWidth="273.0" promptText="Class" />
+      <RadioButton fx:id="rbMale" layoutX="326.0" layoutY="312.0" mnemonicParsing="false" text="Male">
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rbFemale" layoutX="420.0" layoutY="313.0" mnemonicParsing="false" text="Female" toggleGroup="$gender" />
+      <Label alignment="CENTER" layoutX="246.0" layoutY="315.0" prefHeight="17.0" prefWidth="64.0" text="Gender">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="237.0" layoutY="355.0" prefHeight="17.0" prefWidth="83.0" text="Language">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="cbArabic" layoutX="319.0" layoutY="355.0" mnemonicParsing="false" text="Arabic">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="cbEnglish" layoutX="417.0" layoutY="356.0" mnemonicParsing="false" text="English">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="btnRegister" alignment="CENTER" layoutX="310.0" layoutY="401.0" mnemonicParsing="false" onAction="#Register" prefHeight="27.0" prefWidth="149.0" style="-fx-background-color: #562349;" text="Register" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="wrongCredentials" alignment="CENTER" layoutX="310.0" layoutY="287.0" prefHeight="17.0" prefWidth="134.0" text="wrongCredentials" textFill="RED" visible="false">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

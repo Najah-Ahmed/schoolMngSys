@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inventorys.controllers.LoginSignupController">
+   <children>
+      <SplitPane dividerPositions="0.5016722408026756" layoutX="45.0" layoutY="68.0" prefHeight="332.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="68.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="330.0" prefWidth="313.0" style="-fx-background-color: #567890;">
+               <children>
+                  <Label alignment="CENTER" layoutX="73.0" layoutY="14.0" prefHeight="60.0" prefWidth="151.0" text="Singup Form" textFill="WHITE">
+                     <font>
+                        <Font name="Charter Roman" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="userSignup" layoutX="52.0" layoutY="84.0" prefHeight="28.0" prefWidth="193.0" promptText="Username">
+                     <font>
+                        <Font name="Charter Roman" size="14.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="pwdSignup" layoutX="52.0" layoutY="137.0" prefHeight="27.0" prefWidth="193.0" promptText="Password">
+                     <font>
+                        <Font name="Charter Roman" size="14.0" />
+                     </font>
+                  </PasswordField>
+                  <ChoiceBox fx:id="listUser" layoutX="52.0" layoutY="182.0" prefHeight="27.0" prefWidth="193.0" />
+                  <Button fx:id="signup" layoutX="52.0" layoutY="231.0" mnemonicParsing="false" onAction="#onSignup" prefHeight="27.0" prefWidth="193.0" style="-fx-background-color: #f25728;" text="SignUp" textFill="WHITE">
+                     <font>
+                        <Font name="Charter Roman" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #111d5e;">
+               <children>
+                  <Button fx:id="login" layoutX="51.0" layoutY="180.0" mnemonicParsing="false" onAction="#onLogin" prefHeight="27.0" prefWidth="193.0" style="-fx-background-color: #567890;" text="Login" textFill="WHITE">
+                     <font>
+                        <Font name="Charter Roman" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="51.0" layoutY="25.0" prefHeight="49.0" prefWidth="170.0" text="Login Form" textFill="WHITE">
+                     <font>
+                        <Font name="Charter Roman" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="userLogin" layoutX="53.0" layoutY="87.0" prefHeight="28.0" prefWidth="193.0" promptText="Username">
+                     <font>
+                        <Font name="Charter Roman" size="14.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="pwdLogin" layoutX="51.0" layoutY="137.0" prefHeight="27.0" prefWidth="193.0" promptText="Password">
+                     <font>
+                        <Font name="Charter Roman" size="14.0" />
+                     </font>
+                  </PasswordField>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Pane layoutX="4.0" layoutY="4.0" prefHeight="87.0" prefWidth="715.0" style="-fx-background-color: #1d515c;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="55.0" fitWidth="115.0" layoutX="116.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/boxes.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="121.0" layoutY="4.0" prefHeight="83.0" prefWidth="427.0" text="MidNight7  Styles Inventory" textFill="WHITE">
+               <font>
+                  <Font name="Charter Roman" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
